@@ -1,0 +1,206 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+header {
+    background-color: #102374;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #102374;
+}
+
+.tile-div{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebeaeaff;
+}
+
+.main-h1 {
+    text-align: center;
+}
+
+.board {
+    height: 100vh;
+    padding-top: 2rem;
+}
+.form {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 9rem;
+    position: relative;
+}
+    .score-div {
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+    background-color: #dddddd;
+    border-radius: 10px;
+}
+
+.score-title, .score {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.score-square {
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.result {
+    height: 40vh;
+}
+
+
+.option {
+    min-height: 120px;
+    min-width: 120px;
+    background-color: #ffffff;
+    margin: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 100%;
+    position: relative;
+}
+
+.option-item{
+    opacity: 70%;
+}
+
+.option-item-result{
+    opacity: 100%;
+}
+
+.radio-option:checked + .option-item {
+    opacity: 100%;
+} 
+
+.option-button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: none;
+    border-radius: 50%;
+}
+
+.option-rock {
+    border: 16px solid hsl(39, 89%, 49%);
+}
+
+.option-paper {
+    border: 16px solid hsl(230, 89%, 62%);
+}
+
+.option-scissors {
+    border: 16px solid hsl(349, 71%, 52%);
+}
+
+.option-lizard {
+    border: 16px solid hsl(261, 73%, 60%);
+}
+
+.option-spock {
+    border: 16px solid hsl(189, 59%, 53%);
+}
+
+.results{
+    margin: 5rem 0 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.results-paragraph{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #d8d6d6;
+}
+
+.error-paragraph {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #d8d6d6;
+    text-align: center;
+}
+
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+}
+
+.play-button {
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    font-weight: 700;
+    color: #be0303;
+    height: 3rem;
+    width: 5rem;
+    position: absolute;
+    top: 15%;
+    right: 0;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
